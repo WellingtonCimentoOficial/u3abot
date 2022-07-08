@@ -14,7 +14,7 @@ init()
 fake = Faker()
 servidor = ""
 perfil = ""
-status = "Carregando..."
+status = "Loading..."
 contfracao = 1
 
 def write_data(name, username, email, password, created, cont):
