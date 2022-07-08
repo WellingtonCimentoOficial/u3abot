@@ -17,11 +17,11 @@ pacotes = 1
 
 def verifications():
   global url, value, dalay, servidor, perfil
-  url1 = input("Digite sua URL: ")
+  url1 = input("Enter your URL: ")
   if "https://" in url1 and "-earn.buzz/" in url1:
-    value1 = input("Digite um valor ($USD): ")
+    value1 = input("Enter an amount ($USD): ")
     if value1.isnumeric():
-      dalay1 = input("Digite o delay: ")
+      dalay1 = input("Enter the delay: ")
       if dalay1.isnumeric():
         url = url1
         value = value1
@@ -34,13 +34,13 @@ def verifications():
           perfil = url1[22:]
         princ()
       else:
-        print("Delay Inválido!")
+        print("Invalid delay!")
         system("pause")
     else:
-      print("Valor Inválido!")
+      print("Invalid value!")
       system("pause")
   else:
-    print("URL Inválida!")
+    print("Invalid url!")
     system("pause")
 
 
@@ -59,17 +59,17 @@ def timeleft(recived):
       if int(demoraH) >= 24:
         if int(demoraD) >= 30:
           if int(demoraMes) >= 12:
-            return str(demoraMes / 12).replace(".", ",") + " anos"
+            return str(demoraMes / 12).replace(".", ",") + " years"
           else:
-            return str(demoraMes).replace(".", ",") + " meses"
+            return str(demoraMes).replace(".", ",") + " months"
         else:
-          return str(demoraD).replace(".", ",") + " dias"
+          return str(demoraD).replace(".", ",") + " days"
       else:
-        return str(demoraH).replace(".", ",") + " horas"
+        return str(demoraH).replace(".", ",") + " hours"
     else:
-      return str(demoraM).replace(".", ",") + " minutos"
+      return str(demoraM).replace(".", ",") + " minutes"
   else:
-    return str(demoraS).replace(".", ",") + " segundos"
+    return str(demoraS).replace(".", ",") + " seconds"
 
 def things(pacote):
   system("cls")
