@@ -30,6 +30,6 @@ while True:
     elif op == 3:
         exit()
     else:
-        system("cls")
-        print("Opção Inválida!\n")
+        clear_terminal()
+        print("Invalid Option!\n")
         sleep(2)
