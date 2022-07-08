@@ -22,4 +22,5 @@ Finally, we can create unlimited fake accounts, here you will be asked for your 
 
 ![1](https://user-images.githubusercontent.com/77591040/177911714-f82e9cde-418a-433b-ae73-ed06337ae2b6.PNG)
 
-Remembering that when the requested accounts are created, they will be saved in a file with the name 'profile-your profile number.txt' that will be saved in the current directory where the bot is running. Inside this file will be saved the name, user, email, password and the date of creation of the account
+# Comments
+Remembering that when the requested accounts are created, they will be saved in a file with the name 'profile-your profile number.txt' that will be saved in the current directory where the bot is running. Inside this file will be saved the name, user, email, password and the date of creation of the account.
