@@ -1,5 +1,5 @@
 from earn import run
-from fakeaccount import fakeaccount
+from fakeaccount import fakeaccount, clear_terminal
 from os import system
 from time import sleep
 from variables import logo
@@ -8,7 +8,7 @@ from colorama import init, Fore, Style
 init()
 
 def opc():
-    system("cls")
+    clear_terminal()
     print(Fore.GREEN + logo + Style.RESET_ALL)
     print(Fore.GREEN + "                Version: " + Style.RESET_ALL + "1.0" + "                   " + Fore.GREEN + "Created: " + Style.RESET_ALL + "07-07-2022" + "                   " + Fore.GREEN + "Updated: " + Style.RESET_ALL + "07-07-2022\n")
     print("[1] - Make Money")
