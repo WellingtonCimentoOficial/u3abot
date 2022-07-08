@@ -76,17 +76,17 @@ def informations(nome, username, email, password, created, qtd, cont):
 			if thours > 24:
 				if tdays > 30:
 					if tmonths > 12:
-						print(Fore.CYAN + "Remain: " + Style.RESET_ALL + str(tyears).replace(".", ",") + " years\n")
+						print(Fore.CYAN + "Time left: " + Style.RESET_ALL + str(tyears).replace(".", ",") + " years\n")
 					else:
-						print(Fore.CYAN + "Remain: " + Style.RESET_ALL + str(tmonths).replace(".", ",") + " months\n")
+						print(Fore.CYAN + "Time left: " + Style.RESET_ALL + str(tmonths).replace(".", ",") + " months\n")
 				else:
-					print(Fore.CYAN + "Remain: " + Style.RESET_ALL + str(tdays).replace(".", ",") + " days\n")
+					print(Fore.CYAN + "Time left: " + Style.RESET_ALL + str(tdays).replace(".", ",") + " days\n")
 			else:
-				print(Fore.CYAN + "Remain: " + Style.RESET_ALL + str(thours).replace(".", ",") + " hours\n")
+				print(Fore.CYAN + "Time left: " + Style.RESET_ALL + str(thours).replace(".", ",") + " hours\n")
 		else:
-			print(Fore.CYAN + "Remain: " + Style.RESET_ALL + str(tminutes).replace(".", ",") + " minutes\n")
+			print(Fore.CYAN + "Time left: " + Style.RESET_ALL + str(tminutes).replace(".", ",") + " minutes\n")
 	else:
-		print(Fore.CYAN + "Remain: " + Style.RESET_ALL + str(tseconds).replace(".", ",") + " seconds\n")
+		print(Fore.CYAN + "Time left: " + Style.RESET_ALL + str(tseconds).replace(".", ",") + " seconds\n")
 
 def generate_account(server, profile, qtd):
 	cont = 0
