@@ -27,10 +27,10 @@ def write_data(name, username, email, password, created, cont):
 				file.write("Email: " + email + "\n")
 				file.write("Password: " + password + "\n")
 				file.write("Create at: " + created + "\n\n")
-				print(Fore.GREEN + "\n[*] Arquivo " + str(int(cont)) + "/" + str(int(contfracao)) + " sendo salvo...\n" + Style.RESET_ALL)
+				print(Fore.GREEN + "\n[*] File " + str(int(cont)) + "/" + str(int(contfracao)) + " being saved...\n" + Style.RESET_ALL)
 				break
 		except:
-			print(Fore.RED + "\n[-] Erro ao salvar o arquivo!\n" + Style.RESET_ALL)
+			print(Fore.RED + "\n[-] Error saving file!\n" + Style.RESET_ALL)
 
 
 def generate_password():
@@ -55,7 +55,7 @@ def informations(nome, username, email, password, created, qtd, cont):
 	tyears = tmonths / 12
 	system("cls")
 	print(Fore.GREEN + logo + Style.RESET_ALL)
-	print(Fore.CYAN + "SERVIDOR: " + Style.RESET_ALL + servidor + "       " + Fore.CYAN + "PERFIL: " + Style.RESET_ALL + perfil + "       " + Fore.CYAN + "DELAY: " + Style.RESET_ALL + "15m" + "       " + Fore.CYAN + "PACOTES: " + Style.RESET_ALL + str(int(cont) + 1) + "       " + Fore.CYAN + "STATUS: " + Style.RESET_ALL + status + "\n")
+	print(Fore.CYAN + "SERVER: " + Style.RESET_ALL + servidor + "       " + Fore.CYAN + "PROFILE: " + Style.RESET_ALL + perfil + "       " + Fore.CYAN + "DELAY: " + Style.RESET_ALL + "15m" + "       " + Fore.CYAN + "PACKAGES: " + Style.RESET_ALL + str(int(cont) + 1) + "       " + Fore.CYAN + "STATUS: " + Style.RESET_ALL + status + "\n")
 	print(Fore.CYAN + "                                   ------> Meta: " + Style.RESET_ALL + str(qtd) + "       " + Fore.CYAN + "Restante: " + Style.RESET_ALL + str(qtd - cont) + Fore.CYAN + " <------")
 	print(Fore.CYAN + "[*] Name: " + Style.RESET_ALL + nome)
 	print(Fore.CYAN + "[*] Username: " + Style.RESET_ALL + username)
