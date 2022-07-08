@@ -48,6 +48,7 @@ def verifications():
 def secondqtd():
   return int(value) / 2 # quantas vezes o loop vai rodar
 
+
 def timeleft(recived):
   DpM = (int(60 / int(dalay))) * 2 # dolares por minuto
   demoraS = (int(value) - recived) * int(dalay)
@@ -72,6 +73,7 @@ def timeleft(recived):
   else:
     return str(demoraS).replace(".", ",") + " seconds"
 
+  
 def things(pacote):
   clear_terminal()
   print(Fore.GREEN + logo + Style.RESET_ALL)
@@ -81,6 +83,7 @@ def things(pacote):
   print(Fore.RED + "[-] " + Style.RESET_ALL + "FALTAM: $" + str(int(value) - recived) + " USD")
   print("\nTime left: " + timeleft(recived) + "\n\n")
 
+  
 def princ():
   for pacote in range(int(secondqtd())):
     try:
@@ -102,5 +105,6 @@ def princ():
   things(pacotes)
   system("pause")
 
+  
 def run():
   verifications()
