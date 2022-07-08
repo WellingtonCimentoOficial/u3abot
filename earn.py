@@ -74,7 +74,7 @@ def timeleft(recived):
 def things(pacote):
   system("cls")
   print(Fore.GREEN + logo + Style.RESET_ALL)
-  print(Fore.MAGENTA + "SERVIDOR: " + Style.RESET_ALL + servidor + "       " + Fore.MAGENTA + "PERFIL: " + Style.RESET_ALL + perfil + "       " + Fore.MAGENTA + "DELAY: " + Style.RESET_ALL + str(int(dalay)) + "s" + "       " + Fore.MAGENTA + "PACOTES: " + Style.RESET_ALL + str(pacote) + "       " + Fore.MAGENTA + "STATUS: " + Style.RESET_ALL + status + "\n")
+  print(Fore.MAGENTA + "SERVER: " + Style.RESET_ALL + servidor + "       " + Fore.MAGENTA + "PROFILE: " + Style.RESET_ALL + perfil + "       " + Fore.MAGENTA + "DELAY: " + Style.RESET_ALL + str(int(dalay)) + "s" + "       " + Fore.MAGENTA + "PACKAGES: " + Style.RESET_ALL + str(pacote) + "       " + Fore.MAGENTA + "STATUS: " + Style.RESET_ALL + status + "\n")
   print(Fore.YELLOW + "[*] " + Style.RESET_ALL + "META: $" + value + " USD")
   print(Fore.GREEN + "[+] " + Style.RESET_ALL + "ATUAL: $" +  str(recived) + " USD")
   print(Fore.RED + "[-] " + Style.RESET_ALL + "FALTAM: $" + str(int(value) - recived) + " USD")
