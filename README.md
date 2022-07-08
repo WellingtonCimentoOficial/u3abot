@@ -4,8 +4,8 @@ U3A BOT can create unlimited amount of fake accounts on u3a-earn.buzz website an
 * How to use? 
 To be able to use it just run the command pip install -r requirements.txt and then python main.py or if you want a portable version, just download the U3A BOT.exe and then you can use it on any windows machine
 
-* Does it work on linux?
-probably yes but with some problems, because some commands are for windows and not linux
+* Does it work on linux and windows?
+yes it works perfectly on both operating systems
 
 # Main screen
 When executing the script, this screen will appear where you can choose between making money or creating fake accounts. To be able to choose an option, just type its number and press enter.
