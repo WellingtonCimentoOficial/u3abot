@@ -79,7 +79,7 @@ def things(pacote):
   print(Fore.YELLOW + "[*] " + Style.RESET_ALL + "META: $" + value + " USD")
   print(Fore.GREEN + "[+] " + Style.RESET_ALL + "ATUAL: $" +  str(recived) + " USD")
   print(Fore.RED + "[-] " + Style.RESET_ALL + "FALTAM: $" + str(int(value) - recived) + " USD")
-  print("\nTempo restante: " + timeleft(recived) + "\n\n")
+  print("\nTime left: " + timeleft(recived) + "\n\n")
 
 def princ():
   for pacote in range(int(secondqtd())):
