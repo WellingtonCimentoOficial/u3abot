@@ -52,6 +52,7 @@ def generate_password():
 	cont = 0
 	return passwd
 
+
 def informations(nome, username, email, password, created, qtd, cont):
 	global contfracao
 	contfracao = qtd / 3
@@ -88,6 +89,7 @@ def informations(nome, username, email, password, created, qtd, cont):
 	else:
 		print(Fore.CYAN + "Time left: " + Style.RESET_ALL + str(tseconds).replace(".", ",") + " seconds\n")
 
+		
 def generate_account(server, profile, qtd):
 	cont = 0
 	cont2 = 0
@@ -176,6 +178,7 @@ def separator(url):
 		servidor = url[8:21]
 		perfil = url[22:]
 
+		
 def fakeaccount():
 	url = input("Enter your URL: ")
 	qtd = input("Enter account number: ")
