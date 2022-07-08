@@ -3,6 +3,7 @@ import json
 import urllib.parse
 import string
 import random
+import platform
 from faker import Faker
 from os import system
 from time import sleep
@@ -17,6 +18,14 @@ perfil = ""
 status = "Loading..."
 contfracao = 1
 
+def clear_terminal():
+	systemos = platform.system()
+	if str(systemos) == "Windows":
+		system("cls")
+	else:
+		system("clear")
+
+		
 def write_data(name, username, email, password, created, cont):
 	nom = "profile-" + str(perfil) + ".txt"
 	while True:
@@ -53,7 +62,7 @@ def informations(nome, username, email, password, created, qtd, cont):
 	tdays = thours / 24
 	tmonths = tdays / 30
 	tyears = tmonths / 12
-	system("cls")
+	clear_terminal()
 	print(Fore.GREEN + logo + Style.RESET_ALL)
 	print(Fore.CYAN + "SERVER: " + Style.RESET_ALL + servidor + "       " + Fore.CYAN + "PROFILE: " + Style.RESET_ALL + perfil + "       " + Fore.CYAN + "DELAY: " + Style.RESET_ALL + "15m" + "       " + Fore.CYAN + "PACKAGES: " + Style.RESET_ALL + str(int(cont) + 1) + "       " + Fore.CYAN + "STATUS: " + Style.RESET_ALL + status + "\n")
 	print(Fore.CYAN + "                                   ------> Meta: " + Style.RESET_ALL + str(qtd) + "       " + Fore.CYAN + "Left: " + Style.RESET_ALL + str(qtd - cont) + Fore.CYAN + " <------")
