@@ -18,6 +18,7 @@ def opc():
     op = int(input("Choose an option: "))
     return op
 
+
 while True:
     op = opc()
     if op == 1:
