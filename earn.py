@@ -4,6 +4,7 @@ from os import system
 from colorama import init, Fore, Style, Back
 from random import randint
 from variables import logo, user_agents
+from fakeaccount import clear_terminal
 
 init()
 url = "https://"
@@ -72,7 +73,7 @@ def timeleft(recived):
     return str(demoraS).replace(".", ",") + " seconds"
 
 def things(pacote):
-  system("cls")
+  clear_terminal()
   print(Fore.GREEN + logo + Style.RESET_ALL)
   print(Fore.MAGENTA + "SERVER: " + Style.RESET_ALL + servidor + "       " + Fore.MAGENTA + "PROFILE: " + Style.RESET_ALL + perfil + "       " + Fore.MAGENTA + "DELAY: " + Style.RESET_ALL + str(int(dalay)) + "s" + "       " + Fore.MAGENTA + "PACKAGES: " + Style.RESET_ALL + str(pacote) + "       " + Fore.MAGENTA + "STATUS: " + Style.RESET_ALL + status + "\n")
   print(Fore.YELLOW + "[*] " + Style.RESET_ALL + "META: $" + value + " USD")
