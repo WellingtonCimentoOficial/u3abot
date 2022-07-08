@@ -12,7 +12,7 @@ dalay = 0
 servidor = "server"
 perfil = "profile"
 recived = 0
-status = "Carregando..."
+status = "Loading..."
 pacotes = 1
 
 def verifications():
@@ -97,7 +97,7 @@ def princ():
     finally:
       sleep(int(dalay))
   global status
-  status = Fore.WHITE + Back.GREEN + Style.BRIGHT + " CONCLUÍDO " + Style.RESET_ALL
+  status = Fore.WHITE + Back.GREEN + Style.BRIGHT + " FINISHED " + Style.RESET_ALL
   things(pacotes)
   system("pause")
 
