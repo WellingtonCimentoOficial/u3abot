@@ -7,6 +7,7 @@ To be able to use it just run the command pip install -r requirements.txt and th
 * Does it work on linux?
 probably yes but with some problems, because some commands are for windows and not linux
 
+# Main screen
 ![2](https://user-images.githubusercontent.com/77591040/177911527-265bbd9e-4c2c-41ef-b1bf-18b59a108ff4.PNG)
 ![3](https://user-images.githubusercontent.com/77591040/177911528-ace89ff4-e210-4cb8-b5d2-6c27870013fe.PNG)
 ![1](https://user-images.githubusercontent.com/77591040/177911714-f82e9cde-418a-433b-ae73-ed06337ae2b6.PNG)
