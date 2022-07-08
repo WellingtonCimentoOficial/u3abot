@@ -56,7 +56,7 @@ def informations(nome, username, email, password, created, qtd, cont):
 	system("cls")
 	print(Fore.GREEN + logo + Style.RESET_ALL)
 	print(Fore.CYAN + "SERVER: " + Style.RESET_ALL + servidor + "       " + Fore.CYAN + "PROFILE: " + Style.RESET_ALL + perfil + "       " + Fore.CYAN + "DELAY: " + Style.RESET_ALL + "15m" + "       " + Fore.CYAN + "PACKAGES: " + Style.RESET_ALL + str(int(cont) + 1) + "       " + Fore.CYAN + "STATUS: " + Style.RESET_ALL + status + "\n")
-	print(Fore.CYAN + "                                   ------> Meta: " + Style.RESET_ALL + str(qtd) + "       " + Fore.CYAN + "Restante: " + Style.RESET_ALL + str(qtd - cont) + Fore.CYAN + " <------")
+	print(Fore.CYAN + "                                   ------> Meta: " + Style.RESET_ALL + str(qtd) + "       " + Fore.CYAN + "Left: " + Style.RESET_ALL + str(qtd - cont) + Fore.CYAN + " <------")
 	print(Fore.CYAN + "[*] Name: " + Style.RESET_ALL + nome)
 	print(Fore.CYAN + "[*] Username: " + Style.RESET_ALL + username)
 	print(Fore.CYAN + "[*] Email: " + Style.RESET_ALL + email)
@@ -67,17 +67,17 @@ def informations(nome, username, email, password, created, qtd, cont):
 			if thours > 24:
 				if tdays > 30:
 					if tmonths > 12:
-						print(Fore.CYAN + "Restam: " + Style.RESET_ALL + str(tyears).replace(".", ",") + " anos\n")
+						print(Fore.CYAN + "Restam: " + Style.RESET_ALL + str(tyears).replace(".", ",") + " years\n")
 					else:
-						print(Fore.CYAN + "Restam: " + Style.RESET_ALL + str(tmonths).replace(".", ",") + " meses\n")
+						print(Fore.CYAN + "Restam: " + Style.RESET_ALL + str(tmonths).replace(".", ",") + " months\n")
 				else:
-					print(Fore.CYAN + "Restam: " + Style.RESET_ALL + str(tdays).replace(".", ",") + " dias\n")
+					print(Fore.CYAN + "Restam: " + Style.RESET_ALL + str(tdays).replace(".", ",") + " days\n")
 			else:
-				print(Fore.CYAN + "Restam: " + Style.RESET_ALL + str(thours).replace(".", ",") + " horas\n")
+				print(Fore.CYAN + "Restam: " + Style.RESET_ALL + str(thours).replace(".", ",") + " hours\n")
 		else:
-			print(Fore.CYAN + "Restam: " + Style.RESET_ALL + str(tminutes).replace(".", ",") + " minutos\n")
+			print(Fore.CYAN + "Restam: " + Style.RESET_ALL + str(tminutes).replace(".", ",") + " minutes\n")
 	else:
-		print(Fore.CYAN + "Restam: " + Style.RESET_ALL + str(tseconds).replace(".", ",") + " segundos\n")
+		print(Fore.CYAN + "Restam: " + Style.RESET_ALL + str(tseconds).replace(".", ",") + " seconds\n")
 
 def generate_account(server, profile, qtd):
 	cont = 0
@@ -152,9 +152,9 @@ def generate_account(server, profile, qtd):
 		cont3 += 1
 		sleep(900)
 	global status
-	status = Fore.WHITE + Back.GREEN + Style.BRIGHT + " CONCLUÍDO " + Style.RESET_ALL
+	status = Fore.WHITE + Back.GREEN + Style.BRIGHT + " FINISHED " + Style.RESET_ALL
 	informations("", "", "", "", "", qtd, qtd)
-	print(Fore.GREEN + "\n[+] Arquivo '" + "profiles-" + str(perfil) + ".txt" + "' salvo com sucesso!\n" + Style.RESET_ALL)
+	print(Fore.GREEN + "\n[+] File '" + "profiles-" + str(perfil) + ".txt" + "' saved successfully!\n" + Style.RESET_ALL)
 	system("pause")
 		
 
@@ -168,8 +168,8 @@ def separator(url):
 		perfil = url[22:]
 
 def fakeaccount():
-	url = input("Digite sua URL: ")
-	qtd = input("Digite número de contas: ")
+	url = input("Enter your URL: ")
+	qtd = input("Enter account number: ")
 	if "https://" in url and "-earn.buzz/" in url:
 		if qtd.isdigit():
 			separator(url)
