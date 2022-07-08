@@ -15,7 +15,7 @@ def opc():
     print("[2] - Create fake accounts")
     print("[3] - Exit\n")
 
-    op = int(input("Escolha uma opção: "))
+    op = int(input("Choose an option: "))
     return op
 
 while True:
