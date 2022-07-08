@@ -65,7 +65,7 @@ def informations(nome, username, email, password, created, qtd, cont):
 	clear_terminal()
 	print(Fore.GREEN + logo + Style.RESET_ALL)
 	print(Fore.CYAN + "SERVER: " + Style.RESET_ALL + servidor + "       " + Fore.CYAN + "PROFILE: " + Style.RESET_ALL + perfil + "       " + Fore.CYAN + "DELAY: " + Style.RESET_ALL + "15m" + "       " + Fore.CYAN + "PACKAGES: " + Style.RESET_ALL + str(int(cont) + 1) + "       " + Fore.CYAN + "STATUS: " + Style.RESET_ALL + status + "\n")
-	print(Fore.CYAN + "                                   ------> Meta: " + Style.RESET_ALL + str(qtd) + "       " + Fore.CYAN + "Left: " + Style.RESET_ALL + str(qtd - cont) + Fore.CYAN + " <------")
+	print(Fore.CYAN + "                                   ------> Meta: " + Style.RESET_ALL + str(qtd) + "       " + Fore.CYAN + "Remain: " + Style.RESET_ALL + str(qtd - cont) + Fore.CYAN + " <------")
 	print(Fore.CYAN + "[*] Name: " + Style.RESET_ALL + nome)
 	print(Fore.CYAN + "[*] Username: " + Style.RESET_ALL + username)
 	print(Fore.CYAN + "[*] Email: " + Style.RESET_ALL + email)
@@ -76,17 +76,17 @@ def informations(nome, username, email, password, created, qtd, cont):
 			if thours > 24:
 				if tdays > 30:
 					if tmonths > 12:
-						print(Fore.CYAN + "Left: " + Style.RESET_ALL + str(tyears).replace(".", ",") + " years\n")
+						print(Fore.CYAN + "Remain: " + Style.RESET_ALL + str(tyears).replace(".", ",") + " years\n")
 					else:
-						print(Fore.CYAN + "Left: " + Style.RESET_ALL + str(tmonths).replace(".", ",") + " months\n")
+						print(Fore.CYAN + "Remain: " + Style.RESET_ALL + str(tmonths).replace(".", ",") + " months\n")
 				else:
-					print(Fore.CYAN + "Left: " + Style.RESET_ALL + str(tdays).replace(".", ",") + " days\n")
+					print(Fore.CYAN + "Remain: " + Style.RESET_ALL + str(tdays).replace(".", ",") + " days\n")
 			else:
-				print(Fore.CYAN + "Left: " + Style.RESET_ALL + str(thours).replace(".", ",") + " hours\n")
+				print(Fore.CYAN + "Remain: " + Style.RESET_ALL + str(thours).replace(".", ",") + " hours\n")
 		else:
-			print(Fore.CYAN + "Left: " + Style.RESET_ALL + str(tminutes).replace(".", ",") + " minutes\n")
+			print(Fore.CYAN + "Remain: " + Style.RESET_ALL + str(tminutes).replace(".", ",") + " minutes\n")
 	else:
-		print(Fore.CYAN + "Left: " + Style.RESET_ALL + str(tseconds).replace(".", ",") + " seconds\n")
+		print(Fore.CYAN + "Remain: " + Style.RESET_ALL + str(tseconds).replace(".", ",") + " seconds\n")
 
 def generate_account(server, profile, qtd):
 	cont = 0
